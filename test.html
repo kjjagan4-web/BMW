@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW - The Ultimate Driving Machine</title>
+    <style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        background: rgba(0, 0, 0, 0.9);
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #1c7ed6;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
+
+    .navbar-menu {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    .navbar-menu li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1em;
+        transition: color 0.3s ease;
+        padding: 5px 10px;
+    }
+
+    .navbar-menu li a:hover {
+        color: #1c7ed6;
+    }
+
+    @media (max-width: 768px) {
+        .navbar-menu {
+            gap: 15px;
+            font-size: 0.9em;
+        }
+    }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .intro {
+            max-width: 800px;
+            margin: 0 auto 60px;
+            text-align: center;
+            font-size: 1.1em;
+            color: #ddd;
+        }
+
+        
+        .cars-section {
+            margin-top: 80px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #1c7ed6;
+        }
+
+        .cars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .car-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .car-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(28, 126, 214, 0.4);
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .car-info {
+            padding: 20px;
+            background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(28,126,214,0.3) 100%);
+            text-align: center;
+        }
+
+        .car-name {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1c7ed6;
+        }
+
+        .car-desc {
+            font-size: 0.95em;
+            color: #ccc;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="navbar-brand">BMW</a>
+        <ul class="navbar-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="m3.html">Models</a></li>
+            <li><a href="https://www.bmw.com" target="_blank" rel="noopener noreferrer">Official Site</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="container">
+    <header>
+            <h1>BMW</h1>
+            <p style="font-size: 1.3em; color: #1c7ed6; letter-spacing: 2px;">The Ultimate Driving Machine</p>
+    </header>
+
+        <div class="intro">
+            <p>Bayerische Motoren Werke AG, commonly known as BMW, is a German multinational manufacturer of luxury vehicles and motorcycles. Founded in 1916, BMW has established itself as a symbol of performance, innovation, and sophistication. With a commitment to engineering excellence and cutting-edge technology, BMW continues to deliver vehicles that combine thrilling dynamics with premium comfort and style.</p>
+        </div>
+
+    
+
+        <div class="cars-section">
+            <h2 class="section-title">Explore Our Models</h2>
+            <div class="cars-grid">
+                <a href="m3.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="car-card">
+                        <img src="m3.png" alt="BMW 3 Series">
+                        <div class="car-info">
+                            <div class="car-name">BMW 3 Series</div>
+                            <div class="car-desc">The perfect blend of sportiness and elegance, offering dynamic performance and advanced technology.</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="x5.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="car-card">
+                        <img src="x5.jpg" alt="BMW X5">
+                        <div class="car-info">
+                            <div class="car-name">BMW X5</div>
+                            <div class="car-desc">A luxury Sports Activity Vehicle that combines commanding presence with exceptional versatility.</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="m4.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <div class="car-card">
+                        <img src="m4.jpg" alt="BMW M4">
+                        <div class="car-info">
+                            <div class="car-name">BMW M4</div>
+                            <div class="car-desc">Pure racing pedigree meets everyday usability in this high-performance sports coupe.</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
